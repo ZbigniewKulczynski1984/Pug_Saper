@@ -12,11 +12,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    text-align: center;
-    color: #0762ca;
-}
-
 .container {
     background-color: #b2cceb;
     transform-origin: top left;
@@ -111,4 +106,20 @@ nav ul li + li {
 
 nav ul li + li +li {
     margin-left: 30px;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin: 10px;
+    text-align: center;
+    color: #0762ca;
+}
+
+.conetent p {
+    color: #333;
+    line-height: 1.5;
 }
