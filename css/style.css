@@ -12,6 +12,47 @@ body {
     margin: 0;
 }
 
+.search-box {
+	position: relative;
+	align-self: stretch;
+}
+
+.search-input {
+    position: absolute;
+    right: 0;
+	padding: 2em;
+    height: 60px;
+	width: 300px;
+	background-color: #eee;
+	border: none;
+	color: #333;
+	font-size: 14px;
+	transform: translateX(0) scale(0);
+	transition: transform 0.3s;
+}
+
+.search-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 60px;
+	width: 80px;
+	font-size: 25px;
+	border: none;
+	background-color: #0762ca;
+	cursor: pointer;
+    z-index: 1;
+}
+
+.search-btn:focus,
+.search-input:focus {
+	outline: none;
+}
+
+.active {
+	transform: translateX(-80px) scale(1);
+}
+
 .container {
     background-color: #b2cceb;
     transform-origin: top left;
