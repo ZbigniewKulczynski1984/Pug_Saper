@@ -152,15 +152,25 @@ nav ul li + li +li {
 .content {
     max-width: 1000px;
     margin: 50px auto;
+    text-align: center;
+    
 }
 
 .content h1 {
     margin: 10px;
-    text-align: center;
     color: #0762ca;
 }
 
 .conetent p {
     color: #333;
     line-height: 1.5;
+}
+
+.content img {
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
