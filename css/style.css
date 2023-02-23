@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Nunito+Sans:ital,wght@0,300;0,400;1,200&family=Roboto:ital,wght@1,300;1,400&display=swap');
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #333;
-    color: #222;
-    overflow-x: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: #333;
+	color: #222;
+	overflow-x: hidden;
+	margin: 0;
 }
 
 .search-box {
@@ -18,10 +18,10 @@ body {
 }
 
 .search-input {
-    position: absolute;
-    right: 0;
+	position: absolute;
+	right: 0;
 	padding: 2em;
-    height: 60px;
+	height: 60px;
 	width: 300px;
 	background-color: #eee;
 	border: none;
@@ -41,7 +41,7 @@ body {
 	border: none;
 	background-color: #0762ca;
 	cursor: pointer;
-    z-index: 1;
+	z-index: 1;
 }
 
 .search-btn:focus,
@@ -54,184 +54,208 @@ body {
 }
 
 .container {
-    background-color: #b2cceb;
-    transform-origin: top left;
-    transition: transform 0.5s linear;
-    width: 100vw;
-    min-height: 100vh;
-    padding: 50px;
+	background-color: #b2cceb;
+	transform-origin: top left;
+	transition: transform 0.5s linear;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 50px;
 }
 
 .container.show-nav {
-    transform: rotate(-20deg);
+	transform: rotate(-20deg);
 }
 
 .circle-container {
-    position: fixed;
-    top: -100px;
-    left: -100px;
+	position: fixed;
+	top: -100px;
+	left: -100px;
 }
 
 .circle {
-    background-color: #0762ca;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    position: relative;
-    transition: transform 0.5s linear;
+	background-color: #0762ca;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	position: relative;
+	transition: transform 0.5s linear;
 }
 
 .container.show-nav .circle {
-    transform: rotate(-70deg);
+	transform: rotate(-70deg);
 }
 
 .circle button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100px;
-    background: transparent;
-    border: 0;
-    font-size: 26px;
-    color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 100px;
+	background: transparent;
+	border: 0;
+	font-size: 26px;
+	color: #fff;
 }
 
 .circle button:focus {
-    outline: none;
+	outline: none;
 }
 
 .circle button#open {
-    left: 60%;
+	left: 60%;
 }
 
 .circle button#close {
-    top: 60%;
-    transform: rotate(90deg);
-    transform-origin: top left;
+	top: 60%;
+	transform: rotate(90deg);
+	transform-origin: top left;
 }
 
 .container.show-nav + nav li {
-    transform: translateX(0);
-    transition-delay: 0.3s;
+	transform: translateX(0);
+	transition-delay: 0.3s;
 }
 
 nav {
-    position: fixed;
-    bottom: 40px;
-    left: 0;
-    z-index: 100;
+	position: fixed;
+	bottom: 40px;
+	left: 0;
+	z-index: 100;
 }
 
 nav ul {
-    list-style-type: none;
-    padding-left: 10px;
+	list-style-type: none;
+	padding-left: 10px;
 }
 
 nav ul li {
-    text-transform: uppercase;
-    color: #fff;
-    margin: 40px 0;
-    transform: translateX(-200%);
-    transition: transform 0.4s ease-in;
+	text-transform: uppercase;
+	color: #fff;
+	margin: 40px 0;
+	transform: translateX(-200%);
+	transition: transform 0.4s ease-in;
 }
 
 nav ul li i {
-    font-size: 20px;
-    margin-right: 10px;
+	font-size: 20px;
+	margin-right: 10px;
 }
 
-nav ul li + li + li{
-    margin-left: 15px;
-    transform: translateX(-150%);
+nav ul li + li + li {
+	margin-left: 15px;
+	transform: translateX(-150%);
 }
 
-nav ul li + li +li + li{
-    margin-left: 30px;
+nav ul li + li + li + li {
+	margin-left: 30px;
 }
 
 .content {
-    max-width: 1000px;
-    margin: 50px auto;
-    text-align: center;
-    
+	max-width: 1000px;
+	margin: 50px auto;
+	text-align: center;
 }
 
 .content h1 {
-    margin: 10px;
-    color: #0762ca;
+	margin: 10px;
+	color: #0762ca;
 }
 
 .conetent p {
-    color: #333;
-    line-height: 1.5;
+	color: #333;
+	line-height: 1.5;
 }
 
 .content img {
-    width: 100%;
+	width: 100%;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 .gallery-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
 }
 
-h1, h2, p {
-    color: royalblue;
+h1,
+h2,
+p {
+	color: royalblue;
 }
 
 .slider {
-    position: relative;
-    height: 800px;
-    width: 800px;
-    border-radius: 6px;
-    overflow: hidden;
+	position: relative;
+	height: 800px;
+	width: 800px;
+	border-radius: 6px;
+	overflow: hidden;
 }
 
 .slides-container {
-    display: flex;
-    transform: translateX(0);
-    transition: transform 0.5s;
+	display: flex;
+	transform: translateX(0);
+	transition: transform 0.5s;
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .btn {
-    position: absolute;
-    top: 50%;
-    transform: translateX();
-    padding: 0.5em 0.8em;
-    color: #fff;
-    background-color: rgba(0, 0, 0, .4);
-    font-size: 2rem;
-    border: none;
-    cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateX();
+	padding: 0.5em 0.8em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-size: 2rem;
+	border: none;
+	cursor: pointer;
 }
 
 .btn-left {
-    left: 0;
+	left: 0;
 }
 
 .btn-right {
-    right: 0;
+	right: 0;
 }
 
 .btn span {
-    display: block;
-    transition: transform 0.3s;
+	display: block;
+	transition: transform 0.3s;
 }
 
 .btn:hover span {
-    transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.accordion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-box {
+    margin: 30px;
+    width: 200px;
+}
+.accordion-img {
+	position: relative;
+	width: 200px;
+}
+
+.accordion-info-text {
+	visibility: hidden;
 }
