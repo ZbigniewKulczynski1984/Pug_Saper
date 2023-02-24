@@ -21,12 +21,12 @@ body {
 	position: absolute;
 	right: 0;
 	padding: 2em;
-	height: 60px;
-	width: 300px;
+	height: 4rem;
+	width: 20rem;
 	background-color: #eee;
 	border: none;
 	color: #333;
-	font-size: 14px;
+	font-size: 0.9rem;
 	transform: translateX(0) scale(0);
 	transition: transform 0.3s;
 }
@@ -35,9 +35,9 @@ body {
 	position: absolute;
 	top: 0;
 	right: 0;
-	height: 60px;
-	width: 80px;
-	font-size: 25px;
+	height: 4rem;
+	width: 5rem;
+	font-size: 1.5rem;
 	border: none;
 	background-color: #0762ca;
 	cursor: pointer;
@@ -59,7 +59,7 @@ body {
 	transition: transform 0.5s linear;
 	width: 100vw;
 	min-height: 100vh;
-	padding: 50px;
+	padding: 3rem;
 }
 
 .container.show-nav {
@@ -68,14 +68,14 @@ body {
 
 .circle-container {
 	position: fixed;
-	top: -100px;
-	left: -100px;
+	top: -6rem;
+	left: -6rem;
 }
 
 .circle {
 	background-color: #0762ca;
-	height: 200px;
-	width: 200px;
+	height: 15rem;
+	width: 15rem;
 	border-radius: 50%;
 	position: relative;
 	transition: transform 0.5s linear;
@@ -89,10 +89,10 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	height: 100px;
+	height: 6rem;
 	background: transparent;
 	border: 0;
-	font-size: 26px;
+	font-size: 1.6rem;
 	color: #fff;
 }
 
@@ -117,9 +117,9 @@ body {
 
 nav {
 	position: fixed;
-	bottom: 40px;
+	bottom: 3rem;
 	left: 0;
-	z-index: 100;
+	z-index: 1;
 }
 
 nav ul {
@@ -130,33 +130,33 @@ nav ul {
 nav ul li {
 	text-transform: uppercase;
 	color: #fff;
-	margin: 40px 0;
+	margin: 3rem 0;
 	transform: translateX(-200%);
 	transition: transform 0.4s ease-in;
 }
 
 nav ul li i {
-	font-size: 20px;
-	margin-right: 10px;
+	font-size: 1.3rem;
+	margin-right: 0.5rem;
 }
 
 nav ul li + li + li {
-	margin-left: 15px;
+	margin-left: 0.9rem;
 	transform: translateX(-150%);
 }
 
 nav ul li + li + li + li {
-	margin-left: 30px;
+	margin-left: 2rem;
 }
 
 .content {
-	max-width: 1000px;
-	margin: 50px auto;
+	max-width: 60rem;
+	margin: 3rem auto;
 	text-align: center;
 }
 
 .content h1 {
-	margin: 10px;
+	margin: 0.6rem;
 	color: #0762ca;
 }
 
@@ -190,9 +190,9 @@ p {
 
 .slider {
 	position: relative;
-	height: 800px;
-	width: 800px;
-	border-radius: 6px;
+	height: 50rem;
+	width: 50rem;
+	border-radius: 0.4rem;
 	overflow: hidden;
 }
 
@@ -248,12 +248,12 @@ p {
 }
 
 .accordion-box {
-    margin: 30px;
-    width: 200px;
+    margin: 2rem;
+    width: 12rem;
 }
 .accordion-img {
 	position: relative;
-	width: 200px;
+	width: 12rem;
 }
 
 .accordion-info-text {
